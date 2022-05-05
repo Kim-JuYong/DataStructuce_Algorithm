@@ -18,7 +18,7 @@ def solution(s):
     answer = 1001
     if len(s) == 1:
         return 1
-    for window in range(1, len(s)):
+    for window in range(1, len(s) // 2  + 1):
         sliced_s = [s[i: i+window]for i in range(0, len(s), window)]
         print(sliced_s)
         zip_s = string_zip(sliced_s)
