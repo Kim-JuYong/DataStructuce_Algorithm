@@ -16,6 +16,7 @@ def solution(origin, command):
             origin = origin + s
     return ' '.join(origin[1:11])
 
+
 for test_case in range(1, 11):
     n = int(input())
     origin = input().split()
